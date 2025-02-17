@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    background: url('https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fimj%2Fl%2Flas_ciudades_mas_hermosas_en_la_noche4.jpg&width=0&height=0&ratio_width=1240&ratio_height=698&format=webp') no-repeat center center/cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.about-hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.book-btn {
+    background: #28a745;
+}
+
+.social-icons {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.team-members {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    gap: 10px;
+}
+
+.team-members h3 {
+    margin: 10px 0;
+}
+
+.team-members p {
+    font-size: 14px;
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.search-results {
+    overflow: auto; 
+    max-height:70%;
+    padding: 20px;
+    z-index: 0;
+}
+
+.result-item {
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: rgb(0 0 0 / 0.5);
+    padding: 20px;
+    margin: 20px;
+}
+
+.result-img {
+    max-height: 100px;
+}
